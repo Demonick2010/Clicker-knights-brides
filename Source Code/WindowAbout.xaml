@@ -1,0 +1,25 @@
+﻿<Window x:Class="Clicker_Vernost.WindowAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clicker_Vernost"
+        mc:Ignorable="d"
+        Title="WindowAbout" Height="450" Width="800"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        MouseLeftButtonDown="Window_Left_Mouse_Down" Background="{x:Null}"
+        FontFamily="./Fonts/#parryhotter">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/clicker_rip_body.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="tb_About" HorizontalAlignment="Left" Margin="54,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="35" FontFamily="Parry Hotter" FontWeight="Bold" Width="678" Height="275" TextAlignment="Center"/>
+        <Button Height="48" Width="150" Content="Close" Style="{StaticResource CustomFont}" FontSize="24" Click="Button_Close" Margin="325,344,325,58" >
+            <Button.Background>
+                <ImageBrush ImageSource="Images/btn_bg_sm.jpg"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
